@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--indicator-->
+    <dimen name="indicator_height">4dp</dimen>
+
+    <!--edit text length-->
+    <dimen name="maxLength_1">1dp</dimen>
+    <!--weight-->
+    <dimen name="weight">1</dimen>
+    <!-- margin-->
+    <dimen name="margin_0">0dp</dimen>
+    <dimen name="margin_1">@dimen/_1sdp</dimen>
+    <dimen name="margin_2">@dimen/_2sdp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_10">@dimen/_10sdp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_15">@dimen/_15sdp</dimen>
+    <dimen name="margin_16">@dimen/_16sdp</dimen>
+    <dimen name="margin_17">@dimen/_17sdp</dimen>
+    <dimen name="margin_19">@dimen/_19sdp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_27">27dp</dimen>
+    <dimen name="margin_30">@dimen/_30sdp</dimen>
+    <dimen name="margin_31">@dimen/_31sdp</dimen>
+    <dimen name="margin_40">@dimen/_40sdp</dimen>
+    <dimen name="margin_49">@dimen/_49sdp</dimen>
+    <dimen name="margin_50">@dimen/_50sdp</dimen>
+    <dimen name="margin_60">@dimen/_60sdp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_120">120dp</dimen>
+    <dimen name="toolbar_backIconMargin">@dimen/_10sdp</dimen>
+
+    <!--padding-->
+    <dimen name="padding_1">@dimen/_1sdp</dimen>
+    <dimen name="padding_2">@dimen/_2sdp</dimen>
+    <dimen name="padding_5">@dimen/_5sdp</dimen>
+    <dimen name="padding_10">@dimen/_10sdp</dimen>
+    <dimen name="padding_21">@dimen/_21sdp</dimen>
+
+    <!--text size-->
+    <dimen name="text_size_10">@dimen/_10ssp</dimen>
+    <dimen name="text_size_12">@dimen/_12ssp</dimen>
+    <dimen name="text_size_13">@dimen/_13ssp</dimen>
+    <dimen name="text_size_14">@dimen/_14ssp</dimen>
+    <dimen name="text_size_15">@dimen/_15ssp</dimen>
+    <dimen name="text_size_16">@dimen/_16ssp</dimen>
+    <dimen name="text_size_17">@dimen/_17ssp</dimen>
+    <dimen name="text_size_18">@dimen/_18ssp</dimen>
+    <dimen name="text_size_20">@dimen/_20ssp</dimen>
+    <dimen name="text_size_21">@dimen/_21ssp</dimen>
+    <dimen name="text_size_23">@dimen/_23ssp</dimen>
+    <dimen name="text_size_45">40sp</dimen>
+    <dimen name="button_text_size">@dimen/_14ssp</dimen>
+
+    <!--layout height-->
+    <dimen name="layout_height_1">1dp</dimen>
+    <dimen name="layout_height_4">4dp</dimen>
+    <dimen name="layout_height_20">@dimen/_20sdp</dimen>
+    <dimen name="layout_height_25">25dp</dimen>
+    <dimen name="layout_height_26">26dp</dimen>
+    <dimen name="layout_height_30">@dimen/_30sdp</dimen>
+    <dimen name="layout_height_35">35dp</dimen>
+    <dimen name="layout_height_40">40dp</dimen>
+    <dimen name="layout_height_50">@dimen/_40sdp</dimen>
+    <dimen name="layout_height_58">58dp</dimen>
+    <dimen name="layout_height_60">60dp</dimen>
+    <dimen name="layout_height_70">70dp</dimen>
+    <dimen name="layout_height_100">100dp</dimen>
+    <dimen name="layout_height_158">158dp</dimen>
+    <dimen name="layout_height_170">170dp</dimen>
+    <dimen name="layout_height_140">140dp</dimen>
+    <dimen name="layout_height_160">160dp</dimen>
+    <dimen name="layout_height_200">200dp</dimen>
+    <dimen name="layout_height_250">250dp</dimen>
+    <dimen name="layout_height_290">290dp</dimen>
+    <dimen name="layout_height_300">300dp</dimen>
+
+    <!--layout width-->
+    <dimen name="layout_width_1">1dp</dimen>
+    <dimen name="layout_width_25">@dimen/_25ssp</dimen>
+    <dimen name="layout_width_20">@dimen/_20ssp</dimen>
+    <dimen name="layout_width_30">@dimen/_30ssp</dimen>
+    <dimen name="layout_width_41">41dp</dimen>
+    <dimen name="layout_width_100">100dp</dimen>
+    <dimen name="layout_width_170">170dp</dimen>
+    <dimen name="layout_width_200">200dp</dimen>
+    <dimen name="layout_width_230">230dp</dimen>
+    <dimen name="layout_width_250">250dp</dimen>
+    <dimen name="layout_width_260">260dp</dimen>
+    <dimen name="layout_width_300">300dp</dimen>
+    <dimen name="layout_width_330">330dp</dimen>
+
+    <!--card-->
+    <dimen name="card_elevation_6">6dp</dimen>
+    <dimen name="card_max_elevation_6">6dp</dimen>
+    <dimen name="card_corner_radius_6">6dp</dimen>
+
+
+    <dimen name="margin_10_noDp">10</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

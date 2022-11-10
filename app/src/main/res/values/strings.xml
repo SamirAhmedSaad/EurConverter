@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CurrencyConverter</string>
+    <string name="no_internet_connection">No Internet Connection!</string>
+    <string name="user_not_authorized">User is not authorized!</string>
+    <string name="internal_server_error">Internal Server Error!</string>
+    <string name="bad_request">Invalid request, Please contact customer service</string>
+    <string name="timeout">Request is time out!</string>
+    <string name="lastUpdateDate">Last update on %s</string>
+    <string name="EURbaseTitle">Rates based on EUR</string>
+    <string name="convertBasedOnEur">Convert from Eur</string>
+
+</resources>
