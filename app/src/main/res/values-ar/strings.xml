@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">تحويل عملات من يورو</string>
+    <string name="no_internet_connection">لا يوجد إتصال بالانترنت!</string>
+    <string name="user_not_authorized">لا يوجد صلاحيه لهذا المستخدم!</string>
+    <string name="internal_server_error">حدث خطأ في الخادم!</string>
+    <string name="bad_request">يوجد مشكلة، من فضلك قم بالتواصل مع الدعم لفني</string>
+    <string name="timeout">تم انقضاء مده الطلب!</string>
+    <string name="lastUpdateDate">أخر تحديث %s</string>
+    <string name="EURbaseTitle">الأسعار على أساس اليورو</string>
+    <string name="convertBasedOnEur">حوِّل من اليورو</string>
+
+</resources>

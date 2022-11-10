@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="currencyName"
+            type="String" />
+
+        <variable
+            name="currencyValue"
+            type="String" />
+
+        <variable
+            name="currencyNameEnabled"
+            type="Boolean" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/currencyNameTxt"
+            style="@style/TextViewLabelRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="@{currencyName}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            app:drawableStartText="@{@drawable/ic_currency_purchase}"
+            app:size="@{35}"
+            android:drawablePadding="@dimen/padding_5"
+            tools:drawableStart="@drawable/ic_currency_purchase"
+            tools:text="EGP" />
+
+        <EditText
+            android:id="@+id/currencyRateTxt"
+            style="@style/TextViewLabelBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="00.00"
+            android:gravity="center"
+            android:inputType="number"
+            android:enabled="@{currencyNameEnabled}"
+            android:singleLine="true"
+            android:text="@={currencyValue}"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintBaseline_toBaselineOf="@+id/currencyNameTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/currencyNameTxt"
+            tools:text="555.00000000000000" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
