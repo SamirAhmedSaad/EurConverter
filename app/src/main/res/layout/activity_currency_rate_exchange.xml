@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+        <import type="android.text.TextUtils" />
+
+        <variable
+            name="toolTitle"
+            type="String" />
+
+        <variable
+            name="lastUpdatedDate"
+            type="String" />
+
+        <variable
+            name="loadingVisibility"
+            type="Integer" />
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/tool_bar"
+                app:toolBack="@{View.GONE}"
+                app:toolClose="@{View.GONE}"
+                app:toolTitle="@{toolTitle}" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:id="@+id/lastUpdateTimeTxt"
+                style="@style/TextViewLabelSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{@string/lastUpdateDate(lastUpdatedDate)}"
+                android:visibility="@{TextUtils.isEmpty(lastUpdatedDate) ? View.GONE : View.VISIBLE}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/lastUpdateDate"/>
+
+            <View
+                android:id="@+id/timeDivider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray"
+                android:visibility="@{TextUtils.isEmpty(lastUpdatedDate) ? View.GONE : View.VISIBLE}"
+                app:layout_constraintTop_toBottomOf="@+id/lastUpdateTimeTxt" />
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/refreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timeDivider">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/currencyRatesRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/currency_rate_row" />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <include
+                android:id="@+id/loading"
+                layout="@layout/loading_progress"
+                app:visibility="@{loadingVisibility}" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
